@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 """
 Created on Wed Sep 15 21:59:20 2021
 
@@ -16,8 +16,6 @@ import matplotlib.pyplot as plt
 
 # Importing the training set
 data = pd.read_csv("Temp_3000.csv")     
-#data = pd.read_csv("Air-Pollution-Temp.csv")
-# Removing null values
 new_data = data.dropna(axis = 0, how ='any')
 # Selecting the desired rows and cols
 dataset = new_data.iloc[:, 1:2].values
